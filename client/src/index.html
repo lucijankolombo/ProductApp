@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Web app</title>
+  </head>
+  <body>
+    <form action="localhost:4000/products" method="post" class="container">
+      <div class="main">
+      <h2>Product app</h2>
+      <h5>Add a product title</h5>
+      <input type="text" name="input1" class="inputs" id="input1" placeholder="title">
+      <h5>Add a product price</h5>
+      <input type="text" name="input2" class="inputs" id="input2" placeholder="price">
+      <h5>Add a product employee</h5>
+      <input type="text" name="input3" class="inputs" id="input3" placeholder="employee">
+      <h5>Add a product category</h5>
+      <input type="text" name="input4" class="inputs" id="input4" placeholder="category">
+      </div>
+      <div class="main-two">
+      <h5>Add a product description</h5>
+      <textarea name="name" id="textarea1" rows="4" cols="20">Enter description here...</textarea>
+       <br>
+       <h5>Add a new review for the product</h5>
+      <textarea name="name" id="textarea2" rows="4" cols="20">Enter your review here...</textarea>
+       <br>
+       <br>
+      <button type="submit" id="submit-btn" onclick="displaydata();">Submit</button>
+      <br>
+      <button type="button" id="button-two">Delete last element</button>
+      </div>
+      <br>
+  </form>
+    <br>
+    <div class="data-display" id="data-displays">
+    <h3>Product list</h3>
+    </div>
+  </body>
+</html>
